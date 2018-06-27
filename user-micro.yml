@@ -22,4 +22,4 @@ management:
 micro:
      user:
          app:
-            name: user-micro-dev
+            name: user-micro

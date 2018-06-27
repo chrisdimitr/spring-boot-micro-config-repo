@@ -1,0 +1,28 @@
+# In order to update .gitignore the following commands must be applied
+# > git rm -r --cached .
+# > git add .
+# > git commit -m ".gitignore is now working"
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+\.directory

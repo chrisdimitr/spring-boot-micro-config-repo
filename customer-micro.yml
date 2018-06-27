@@ -1,5 +1,14 @@
+spring:
+      data:
+          mongodb:
+                host: dev-lifecycle.kotsovolos.gr
+                port: 27017
+                database: cqrs_flux_dev
+                username: cqrsFluxDev
+                password: cqrsFluxDev
+
 server:
-      port: 8080
+      port: 8181
 
 eureka:
       client:
@@ -13,13 +22,7 @@ eureka:
               leaseRenewalIntervalInSeconds: 1
               leaseExpirationDurationInSeconds: 2
 
-management:
-          endpoints:
-                  web:
-                     exposure:
-                             include: *
-
 micro:
-     user:
-         app:
-            name: user-micro-dev
+     customer:
+             app:
+                name: customer-micro
