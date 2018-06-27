@@ -13,14 +13,22 @@ eureka:
               leaseRenewalIntervalInSeconds: 1
               leaseExpirationDurationInSeconds: 2
 
+management:
+          endpoints:
+                   web:
+                      base-path: / 
+                      exposure:
+                              include: "*"
+
 turbine:
-      aggregator:
-                clusterConfig: ${micro.circuitBreaker.turbine.appCluster}
-      appConfig: ${micro.circuitBreaker.turbine.appCluster}
+      #aggregator:
+                #clusterConfig: user-micro,customer-micro,account-micro
+      appConfig: user-micro,customer-micro,account-micro
+      clusterNameExpression: new String("default")
 
 micro:
      circuitBreaker:
                    app:
                       name: circuit-breaker-monitor-micro
                    turbine:
-                          appCluster: user-micro, customer-micro, account-micro
+                          appCluster: user-micro,customer-micro,account-micro

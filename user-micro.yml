@@ -15,9 +15,10 @@ eureka:
 
 management:
           endpoints:
-                  web:
-                     exposure:
-                             include: *
+                   web:
+                      #base-path: / 
+                      exposure:
+                              include: "*"
 
 micro:
      user:
