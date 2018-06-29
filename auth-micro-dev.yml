@@ -1,0 +1,26 @@
+server:
+      port: 7777
+
+eureka:
+      client:
+            healthcheck:
+                      enabled: true
+            serviceUrl:
+                      defaultZone: http://localhost:8061/eureka/
+      instance:
+              preferIpAddress: true
+              instanceId: ${spring.cloud.client.hostname}:${server.port}
+              leaseRenewalIntervalInSeconds: 1
+              leaseExpirationDurationInSeconds: 2
+
+management:
+          endpoints:
+                   web:
+                      #base-path: / 
+                      exposure:
+                              include: "*"
+
+micro:
+     user:
+         app:
+            name: auth-micro-dev
