@@ -29,7 +29,7 @@ turbine:
 micro:
      circuitBreaker:
                    app:
-                      name: circuit-breaker-monitor-micro-dev
+                      name: circuit-breaker-monitor-micro-test
                       logging:
                              appenders:
                                       logstash:

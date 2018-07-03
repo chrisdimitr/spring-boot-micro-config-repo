@@ -24,3 +24,7 @@ micro:
      user:
          app:
             name: user-micro
+            logging:
+                   appenders:
+                            logstash:
+                                    url: http://10.72.1.248:9200/_bulk

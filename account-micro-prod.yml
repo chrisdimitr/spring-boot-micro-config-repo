@@ -1,5 +1,14 @@
+spring:
+      data:
+          mongodb:
+                host: dev-lifecycle.kotsovolos.gr
+                port: 27017
+                database: cqrs_flux_dev
+                username: cqrsFluxDev
+                password: cqrsFluxDev
+
 server:
-      port: 7777
+      port: 8282
 
 eureka:
       client:
@@ -21,10 +30,10 @@ management:
                               include: "*"
 
 micro:
-     user:
-         app:
-            name: auth-micro-dev
-            logging:
-                   appenders:
-                            logstash:
-                                    url: http://10.72.1.248:9200/_bulk
+     account:
+             app:
+                name: account-micro-prod
+                logging:
+                       appenders:
+                                logstash:
+                                        url: http://10.72.1.248:9200/_bulk

@@ -23,7 +23,7 @@ management:
 micro:
      user:
          app:
-            name: auth-micro-dev
+            name: auth-micro-prod
             logging:
                    appenders:
                             logstash:

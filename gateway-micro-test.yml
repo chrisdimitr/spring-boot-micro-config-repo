@@ -5,7 +5,7 @@ spring:
                         locator:
                                enabled: true
                 routes:
-                - id: user-micro
+                 - id: user-micro
                   uri: lb://user-micro
                   predicates:
                   - Path=/api/users/**
@@ -42,7 +42,7 @@ eureka:
 micro:
      gateway:
              app:
-                name: gateway-micro
+                name: gateway-micro-test
                 logging:
                        appenders:
                                 logstash:

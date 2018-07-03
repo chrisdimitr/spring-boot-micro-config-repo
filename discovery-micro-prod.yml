@@ -16,7 +16,7 @@ eureka:
 micro:
      discovery:
               app:
-                 name: discovery-micro
+                 name: discovery-micro-prod
                  logging:
                         appenders:
                                  logstash:

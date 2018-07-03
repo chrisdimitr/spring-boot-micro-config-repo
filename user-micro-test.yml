@@ -1,5 +1,5 @@
 server:
-      port: 7777
+      port: 8080
 
 eureka:
       client:
@@ -23,7 +23,7 @@ management:
 micro:
      user:
          app:
-            name: auth-micro-dev
+            name: user-micro-test
             logging:
                    appenders:
                             logstash:

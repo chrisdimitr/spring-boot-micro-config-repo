@@ -17,3 +17,7 @@ micro:
      discovery:
               app:
                  name: discovery-micro-dev
+                 logging:
+                        appenders:
+                                 logstash:
+                                         url: http://10.72.1.248:9200/_bulk
